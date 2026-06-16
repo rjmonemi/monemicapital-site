@@ -16,6 +16,47 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<!--
+  Structured data (JSON-LD) for entity recognition / Knowledge Graph.
+  TODO: add the firm's real profile URLs to the Organization "sameAs" array below,
+  e.g. "https://www.linkedin.com/company/...", "https://www.crunchbase.com/organization/...",
+  "https://x.com/...". Only list profiles that actually exist — a wrong URL hurts matching.
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://monemicapital.com/#organization",
+      "name": "Monemi Capital",
+      "url": "https://monemicapital.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://monemicapital.com/assets/logo-m-navy.png"
+      },
+      "image": "https://monemicapital.com/assets/og.png",
+      "description": "Monemi Capital is a two-generation family investment firm that acquires and repositions B- and C-class multifamily communities across Southern California, anchored in the Inland Empire with selective investment in Los Angeles and Orange counties.",
+      "areaServed": [
+        { "@type": "Place", "name": "Inland Empire, California" },
+        { "@type": "Place", "name": "Los Angeles County, California" },
+        { "@type": "Place", "name": "Orange County, California" }
+      ],
+      "knowsAbout": [
+        "Multifamily real estate investment",
+        "Value-add real estate",
+        "Workforce housing",
+        "Real estate underwriting and asset management"
+      ],
+      "founder": [
+        { "@id": "https://monemicapital.com/team.html#ryan-monemi" },
+        { "@id": "https://monemicapital.com/team.html#saeed-monemi" }
+      ],
+      "sameAs": []
+    }
+  ]
+}
+</script>
 </head>
 <body>
 

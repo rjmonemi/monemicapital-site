@@ -16,6 +16,60 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<!--
+  Structured data (JSON-LD) — Person entities for the two principals.
+  TODO: add real profile URLs to each "sameAs" array (only ones that exist):
+    Ryan  — LinkedIn, X, Google Scholar / IEEE author page
+    Saeed — Google Scholar / IEEE author page, LinkedIn
+  GitHub (rjmonemi) is already included for Ryan.
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://monemicapital.com/team.html#ryan-monemi",
+      "name": "Ryan Monemi",
+      "jobTitle": "General Partner",
+      "worksFor": { "@id": "https://monemicapital.com/#organization" },
+      "url": "https://monemicapital.com/team.html",
+      "description": "General Partner of Monemi Capital, responsible for acquisitions, underwriting, capital structuring, and lender relationships. An electrical engineer and published IEEE researcher pursuing a master's in financial engineering at USC.",
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "California State Polytechnic University, Pomona" },
+        { "@type": "CollegeOrUniversity", "name": "University of Southern California" }
+      ],
+      "knowsAbout": [
+        "Real estate underwriting",
+        "Financial engineering",
+        "Capital structuring",
+        "Multifamily real estate investment"
+      ],
+      "sameAs": [
+        "https://github.com/rjmonemi"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://monemicapital.com/team.html#saeed-monemi",
+      "name": "Saeed Monemi",
+      "honorificPrefix": "Dr.",
+      "jobTitle": "Principal",
+      "worksFor": { "@id": "https://monemicapital.com/#organization" },
+      "url": "https://monemicapital.com/team.html",
+      "description": "Principal of Monemi Capital overseeing operations and asset management, with more than forty years of residential real estate renovation and repositioning experience nationwide and a background in utility-industry infrastructure.",
+      "knowsAbout": [
+        "Real estate operations",
+        "Asset management",
+        "Residential renovation and repositioning",
+        "Electrical engineering",
+        "Utility infrastructure"
+      ],
+      "sameAs": []
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
